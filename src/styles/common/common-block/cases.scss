@@ -1,0 +1,36 @@
+.cases {
+    background-color: #FAFAFA;
+    .container-header-min {
+        h4 {
+        color: #bdbdbd;
+        }
+        span {
+            display: none;
+        }
+
+    }
+    .cases-content {
+        border-top: 1px solid #bdbdbd 0.5%;
+    }
+    .left-part {
+        width: 100%;
+    }
+    
+    @media (min-width: 981px) {
+        .container-header-min {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                display: block;
+                color: #bdbdbd;
+            }
+        }
+        .left-part {
+            width: 30%;
+        }
+        
+    }
+}
+

@@ -1,0 +1,231 @@
+.mainFooter {
+    width: 100%;
+    background-color:  #22252D;
+    flex-shrink: 0;
+    padding: 0;
+    position: relative;
+    .bac_img {
+        position: relative;
+        height: 192px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(34, 37, 45)) ,
+          url(../img/icons/mapbase.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        
+        .usa-map {
+            height: 55px;
+            width: 94px;
+            background-image: url(../img/icons/maps_usa.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 50px;
+            top: 30px;
+            position: absolute;
+    
+        }
+        .ukraine-map {
+            height: 56px;
+            width: 129px;
+            background-image: url(../img/icons/ukr-maps-top.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 60px;
+            top: 65px;
+            position: absolute;
+        }
+    }
+    .logo-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .scroll_up {
+        height: 44px;
+        width: 44px;
+        background-image: url(../img/icons/scroll_up.svg);
+        background-size: contain;
+        background-repeat: no-repeat;    
+    }
+    .menu-footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        .part {
+            position: relative;
+            min-width: 170px; 
+            width: 50%;
+        }
+        .order-part {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 100%;
+
+            ul {
+                width: 50%;
+            }
+            .Start-your-project {  
+                width: 50%;
+                padding: 20px 0;
+                .menu-footer-li {
+                    background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: rgb(81, 229, 236);     
+                    font-family: Russo One;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+        }
+        li {
+            padding: 20px 0;
+            a {
+                font-family: Russo One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.08em;
+                color: #FFFFFF;   
+            }
+        } 
+    }
+    .linear-separator {
+        width: 100%;
+        height: 1px;
+        background-color:  #ffffff;
+        opacity: 0.2;
+        margin: 10px 0;
+    }
+    .dop-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    
+        ul:nth-child(2n){
+            margin-left: 50px;  
+        }
+        li {
+            padding: 15px 0;  
+            a {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 160%;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: #F2F2F2;
+            }
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0; 
+        margin-bottom: 10px;
+    }
+    @media (min-width: 981px) {
+        .scroll_up {
+            display: none;
+        }
+        .dop-menu {
+            flex-direction: column;
+            justify-content: center;
+            ul:nth-child(2n){
+                margin-left: 0;  
+            }
+            li {
+                padding: 10px 0;  
+            }
+        }
+        .footer-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .linear-separator {
+                display: none;
+            }
+        }
+        .bac_img {
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 90%;
+            background-size:contain;  
+            .usa-map {
+                top: 50px;
+                left: 120px;    
+            }
+            .ukraine-map {
+                background-image: url(../img/icons/maps_uk.svg);
+                right: 410px;
+                top: 60px;
+            }
+        }
+        .menu-footer {
+            width: 70%;
+            position: relative;
+            .part {
+                padding: 0 20px;
+                width: auto;
+            }
+            li {
+                a {
+                    font-size: 24px; 
+                }
+            } 
+            .order-part {
+                flex-direction: column;
+                align-items: flex-start;
+                .Start-your-project {
+                    width: 100%;
+                    .menu-footer-li {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lang-flag {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    h4 {
+        font-family: Russo One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        color: #fff;
+    }
+    .flag_en {
+        width: 16px;
+        height: 12px;
+        background: url(../img/icons/flag_en.svg) no-repeat;
+        background-size: contain;
+        box-shadow: 0px 0px 3px 0px rgba(34, 60, 80, 0.7) inset;
+    }
+    .icon-drop-down-wite:before {
+        content: "\e92c";
+        color: #fff;
+        font-size: 24px;
+      }
+}

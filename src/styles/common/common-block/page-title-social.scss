@@ -1,0 +1,120 @@
+.page-title-social {
+    background-color: #22252D;
+}
+
+.page-title-social-content {
+    display: flex;
+    flex-direction: column;
+    .left-part {
+
+        .img {
+            width: 100%;
+            height: 204px;
+            background: url(../img/social1.png) no-repeat;
+            background-size: cover;
+        }
+    }
+    .right-part {
+        width: 100%;
+        h1 {
+            color: #fff;
+            margin-block-start: 0;
+            margin-block-end: 20px; 
+        }
+        p {
+            color: #F2F2F2;
+        }
+        a {
+            color: #BDBDBD;
+            margin-right: 10px;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 40px;
+        } 
+    }
+}
+.technologies-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    h4 {
+        background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+         color:  rgb(81, 229, 236); 
+         text-transform: uppercase;
+         margin-block-end: 1em;
+         margin-block-start: 1em;            
+    }
+    time {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: #BDBDBD;
+    }
+}
+.page-title-social-bottom {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #828282;
+    }
+}
+@media (min-width: 981px) {
+    .page-title-social {
+        background-color: #fff;
+    }
+    .page-title-social-content {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
+        .left-part {
+            width: 60%;
+            .img {
+                height: 430px;
+            }
+        }
+        .right-part {
+            width: 50%;
+            padding: 50px;
+            background-color: #22252D;
+            height: fit-content;
+            position: relative;
+            margin-left: -80px;
+            .technologies-date {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 5px;
+                h4 {
+                    margin-block-end: 0;
+                    margin-block-start: 0;            
+               }
+            }
+            h1 {
+                margin-block-start: 0px;
+                margin-block-end: 20px;       
+        }
+    }
+    }
+    .page-title-social-bottom {
+        width: 30%;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 1000px;
+    }
+}

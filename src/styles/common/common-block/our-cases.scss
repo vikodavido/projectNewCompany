@@ -1,0 +1,169 @@
+.our-cases {
+    background-color: #FAFAFA;
+    .container-top {
+        .btn {
+            display: none;
+        }
+    }
+    .our-cases-content {
+        .left-part {
+            width: 100%;
+            .menu-our-cases {
+                padding: 20px 0;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                .icon-arrow-next:before {
+                    display: none;
+                }
+                a {
+                    color: #22252D;
+                    font-size: 18px;      
+                }
+            }
+            li:hover,
+            li:active {
+                .icon-arrow-next:before {
+                    display: block;
+                    content: "\e930";
+                    color:  rgb(81, 229, 236); 
+                }
+                a {
+                    background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color:  rgb(81, 229, 236); 
+                    margin-left: 10px; 
+                }
+            }
+        }
+        .right-part {
+            width: 100%;
+            .our-cases-photo {
+                margin-top: 20px;
+                width: 100%;
+                height: 193px;
+                background: url(../img/our-cases1.png) no-repeat;
+                background-size: cover;
+                margin-left: -15px;
+            }
+            .our-cases-info {
+                width: 100%;
+                height: fit-content;
+                background-color: #22252D;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                margin-top: -15px;
+                h2 {
+                    color: #FFFFFF;
+                    margin: 0 0 20px 0;
+                    font-size: 32px;
+                }
+                .p-info {
+                    width: 100%;
+                    p {
+                        color: #FFFFFF;
+                        font-size: 14px;
+                        margin-top: 0;
+                        margin-bottom: 15px;
+                    }
+                }
+                .details {
+                    color: #FFFFFF;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    line-height: 140%;
+                    letter-spacing: 0.12em; 
+                    padding-top: 10px;
+                    .icon-arrow-next:before {
+                        content: "\e930";
+                        margin-left: 10px;
+                      }
+                }
+            }
+        } 
+        .our-cases-bottom  {
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            
+            text-align: center;
+            h4 {
+                color: #22252D;
+                font-size: 16px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .btn {
+                width: 100%;
+            }
+        } 
+    }
+    @media (min-width: 981px) {
+        .container-top {
+            .btn {
+                display: block;
+            }
+        }
+        .our-cases-content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .left-part {
+                margin-right: 10px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .right-part {
+                width: 70%;
+                margin-left: 10px;
+                .our-cases-photo {
+                    width: 100%;
+                    height: 465px;
+                    margin: 0;
+                }
+                .our-cases-info {
+                    background-color: #22252D;
+                    padding: 30px;
+                    margin-top: -30px;
+                    margin-left: -30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    h2 {
+                        width: 35%;
+                        margin: 0;
+                    }
+                    .p-info {
+                        width: 55%;
+
+                        p {
+                            margin-top: 0;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                
+            }  
+            .our-cases-bottom  {
+                display: none;
+            }
+        }
+    }
+}
+
+
+    
+    
+

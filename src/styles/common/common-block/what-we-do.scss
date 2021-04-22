@@ -1,0 +1,48 @@
+.what-we-do {
+    background-color: #FAFAFA;
+    .what-we-do-content {
+        width: 100%;
+        .what-we-do-card {
+            margin: 20px 0;
+            .number-card {
+                font-size: 32px;
+                line-height: 110%;
+                letter-spacing: 0.02em;
+                background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color:  rgb(81, 229, 236);    
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+    }
+    @media (min-width: 981px) {
+        .what-we-do-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .what-we-do-card:not(:nth-of-type(3n)) {
+                margin-right: 30px;
+            }
+            .what-we-do-card {  
+                width: 400px; 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 10px 0;
+                .number-card {
+                    padding: 30px 20px 0 0;
+                    font-size: 48px;
+                }
+                h2 {
+                    font-size: 32px;
+                    line-height: 135%;
+                }
+            }
+        
+        }
+    }
+}

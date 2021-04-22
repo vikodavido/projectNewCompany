@@ -1,0 +1,161 @@
+.pricing-v1 {
+    background-color: #FAFAFA;
+}
+.pricing-v1-content {
+    .left-part {
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        p {
+            font-size: 14px;
+        }
+        .menu-pricing {
+            padding: 20px 0;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            .icon-arrow-next:before {
+                display: none;
+              }
+            a {
+                color: #22252D;
+                font-size: 18px;      
+            }
+        }
+        li:hover,
+        li:active {
+            .icon-arrow-next:before {
+                display: block;
+                content: "\e930";
+                color:  rgb(81, 229, 236); 
+              }
+            a {
+                background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color:  rgb(81, 229, 236); 
+                margin-left: 10px; 
+
+            }
+        }
+        .left-part-bottom {
+            border-top: 1px solid #F2F2F2;
+        }
+    }
+    
+    
+}
+.pricing-v1  {
+    .right-part {
+        background: #22252D url(../img/пользователей.svg) no-repeat 95% 10%;
+        width: 100%;
+        padding: 20px 0;
+        .title-right-part {
+            display: flex;
+            flex-direction: row;
+            align-items:baseline;
+            .currency {
+                width: 16px;
+                height: 53px;
+                background-image: url(../img/icons/₴.svg);
+                background-repeat: no-repeat ;
+                background-position-y: center;
+            }
+            h1 {
+                color: #fff;
+                font-size: 48px;
+                line-height: 110%;
+                letter-spacing: 0.02em;
+                margin-right: 10px;
+            }
+            h1:nth-last-of-type(1) {
+                font-size: 24px;
+                line-height: 110%;
+                background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));     
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color:  rgb(81, 229, 236); 
+            }
+            
+        }
+        .parameters {
+            margin-bottom: 50px;
+            
+            li {
+                margin: 20px 0;
+                .position {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    div {
+                        width: 10px;
+                        height: 10px;
+                        background: linear-gradient(45deg, rgba(81, 229, 236, 1), rgba(13, 193, 149, 1));
+                        margin-right: 10px;
+                    }
+                    h4 {
+                        color: #fff;
+                        margin: 10px 0;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 160%;
+                    letter-spacing: 0.01em;
+                    color: #F2F2F2;
+                    margin: 0 0 0 20px;
+                }
+                
+            }
+        }
+        
+        }
+    }
+    @media (min-width: 981px) {
+        .pricing-v1 {
+            position: relative;
+            padding-bottom: 100px;
+            .right-part {
+                background: #22252D url(../img/пользователей.svg) no-repeat 90% 0%;
+                width: 60%;
+                padding: 50px;
+                margin-left: auto;
+                position: absolute;
+                top: 150px;
+                right: 0;
+                .parameters {
+                    display: flex;
+                    flex-direction: row;
+                    ul {
+                        margin-right: 30px;
+                    }
+                } 
+                .right-part-bottom {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    p {
+                        margin-left: 200px;
+                        font-size: 14px;
+                    }
+                }   
+            }
+        }
+        .pricing-v1-content {
+            display: flex;
+            flex-direction: row;
+            .left-part {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 50px 0 300px 0;
+                }
+            }
+        }
+    }

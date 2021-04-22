@@ -1,0 +1,61 @@
+.partners-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .partner {
+        width: 164px;
+        height: 80px;
+        margin: 20px 0;
+    }
+    .img-1 {
+        background: url(../img/partner1.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-2 {
+        background: url(../img/partner2.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-3 {
+        background: url(../img/partner3.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-4 {
+        background: url(../img/partner4.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-5 {
+        background: url(../img/partner5.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-6 {
+        background: url(../img/partner6.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-7 {
+        background: url(../img/partner7.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-8 {
+        background: url(../img/partner8.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-9 {
+        background: url(../img/partner9.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .img-10 {
+        background: url(../img/partner10.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 981px) {
+    .partners-content {
+        .partner {
+            width: 220px;
+            height: 124px;
+            margin: 40px 0;
+        }
+    }
+}

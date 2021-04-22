@@ -1,0 +1,162 @@
+.testimonials {
+    background-color: #FAFAFA;
+    .pagination-top {
+        display: none;
+    }
+    .testimonials-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        min-height: 208px;
+        .testimonials-photo {
+            position: absolute;
+            left: 0;
+            top: -16px;
+            z-index: 1;
+        }
+        .wrap-text {
+            margin-top: 22px;
+        }
+        .information {
+            background-color:  #333333;
+            width: 100%;
+            max-width: 384px;
+            height: 222px;
+            margin-right: 16px;
+            margin-left: 16px;
+            .top {
+                margin-left: 60px;
+                h4 {
+                    color: #fff;
+                    margin: 0;
+                }
+                p {
+                    color: #fff;
+                    font-size: 14px; 
+                    margin: 5px 0;
+                    font-style: normal;
+                }
+            }
+            p {
+                font-family: Ubuntu;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.01em;
+                color: #F2F2F2;
+                margin: 0;
+            }
+        }
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        margin-left: 11px;
+        li {
+            display: inline-block;
+            list-style: none;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            button {
+                visibility: hidden;
+            }
+            &::before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #000;
+            }
+            &.slick-active {
+                &::before {
+                    width: 6px;
+                    height: 6px;
+                    background-color:  rgba(81, 229, 236, 1);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    border: 1px solid rgba(81, 229, 236, 1);
+                }
+            }
+        }
+    }
+    .title {
+        margin-left: 40px;
+    }
+    .testimonials-content {
+        margin-top: 25px;
+    }
+    @media (min-width: 981px) {
+        padding-bottom: 50px;
+        .testimonials-content {
+            margin-top: 0;
+        }
+        .title {
+            margin-left: 20px;
+        }
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .container {
+            position: relative;
+        }
+        .container-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pagination-top {
+            display: flex;
+        }
+        .testimonials-content {
+            width: 1298px;
+            margin-left: -17px;
+                .testimonials-card {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 17px;
+                    margin-right: 17px;
+                    max-width: 400px;
+                    .testimonials-photo {
+                        top: 0;
+                    }
+                    .information {
+                        overflow: hidden;
+                        height: fit-content;
+                        padding: 15px;
+                        margin-right: 0;
+                        margin-left: 0;
+                        .top {
+                            margin-left: 60px;
+                        }
+                    }
+                }
+        }
+    }   
+}

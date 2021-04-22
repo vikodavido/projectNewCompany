@@ -1,0 +1,118 @@
+.read-also {
+    .pagination-top {
+        display: none;
+    }
+    .pagination-bottom {
+        display: flex;
+    }
+    @media (min-width: 981px) {
+        .pagination-top {
+            display: flex;
+        }
+        .pagination-bottom {
+            display: none;
+        }
+        .container {
+            position: relative;
+        }
+    }
+}
+
+
+.read-also {
+    .read-also-content {
+        padding-top: 20px;
+        .read-also-card {
+            margin-bottom: 60px;
+            width: 100%;
+                .img-card1 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also1.png) no-repeat;
+                    background-size: cover;
+                }
+                .img-card2 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also2.png) no-repeat;
+                    background-size: cover;
+                }
+                .img-card3 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also3.png) no-repeat;
+                    background-size: cover;
+                }
+                .img-card4 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also4.png) no-repeat;
+                    background-size: cover;
+                }
+                .img-card5 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also5.png) no-repeat;
+                    background-size: cover;
+                }
+                .img-card6 {
+                    width: 100%;
+                    height: 204px;
+                    background: url(../img/read-also6.png) no-repeat;
+                    background-size: cover;
+                }
+                a {
+                    color: #BDBDBD;
+                    margin-right: 10px;
+                }
+                h3 {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    @media (min-width: 981px) {
+        .container-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .read-also-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding:  0;
+            .read-also-card {
+                width: 400px;
+                margin: 30px 20px;
+            }
+            .img-card {
+                width: 100%;
+                height: 174px;
+            }
+            p {
+               font-size: 14px;
+            }
+            .technologies-date {
+                margin: 10px 0;
+                h4 {
+                    display: none;
+                }
+                .round {
+                    display: none;
+                }
+                time {
+                    font-family: Russo One;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                    color: #828282;
+                }
+            }  
+        }
+    }
+}
+

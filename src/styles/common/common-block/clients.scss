@@ -1,0 +1,89 @@
+.clients {
+    .container-top {
+        .btn {
+            display: none;
+        }
+    }
+    .clients-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .client {
+            width: 164px;
+            height: 80px;
+            margin: 20px 0;
+        }
+        .img-1 {
+            background: url(../img/client1.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-2 {
+            background: url(../img/client2.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-3 {
+            background: url(../img/client3.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-4 {
+            background: url(../img/client4.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-5 {
+            background: url(../img/client5.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-6 {
+            background: url(../img/client6.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-7 {
+            background: url(../img/client7.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-8 {
+            background: url(../img/client8.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-9 {
+            background: url(../img/client9.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-10 {
+            background: url(../img/client10.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-11 {
+            background: url(../img/client11.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+        .img-12 {
+            background: url(../img/client12.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+    }
+    .clients-bottom {
+        h4 {
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
+@media (min-width: 981px) {
+    .clients {
+        .clients-content {
+            .client {
+                width: 184px;
+                height: 124px;
+                margin: 40px 0;
+            }
+        }
+        .clients-bottom {
+            display: none;
+        }
+    }
+}

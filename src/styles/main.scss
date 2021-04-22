@@ -1,0 +1,50 @@
+
+@import "fonts";
+@import "header";
+@import "footer"; 
+
+@import "./common/common"; 
+
+
+ // common
+@import "./common/common-block/cta-right";
+@import "./common/common-block/cta-left";
+@import "./common/common-block/cta-middle";
+@import "./common/common-block/what-we-do";
+@import "./common/common-block/services";
+@import "./common/common-block/contacts";
+@import "./common/common-block/partners";
+@import "./common/common-block/clients";
+@import "./common/common-block/article";
+@import "./common/common-block/why-indevlab";
+@import "./common/common-block/page-title";
+@import "./common/common-block/page-title-social";
+@import "./common/common-block/page-title-form";
+@import "./common/common-block/blog";
+@import "./common/common-block/read-also";
+@import "./common/common-block/pricing-v1";
+@import "./common/common-block/article-simple";
+@import "./common/common-block/testimonials";
+@import "./common/common-block/slide"; 
+@import "./common/common-block/mane-slider"; 
+@import "./common/common-block/services-cases";
+@import "./common/common-block/team";
+@import "./common/common-block/cases";
+@import "./common/common-block/our-cases";
+  
+
+// app
+@import "./app/about-page";
+@import "./app/blog-page";
+@import "./app/careers-page";
+@import "./app/home-page";
+@import "./app/services-page"; 
+@import "./app/technologies-page"; 
+@import "./app/services-detail-page";
+@import "./app/blog-articlev2-page";
+@import "./app/blog-article-page";
+@import "./app/careers-about-page";
+ 
+  
+
+  

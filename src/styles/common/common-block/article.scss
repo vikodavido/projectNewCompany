@@ -1,0 +1,41 @@
+.article-content {
+    .article-p {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        h2 {
+            width: 100%;
+            margin-right: 50px;
+            font-size: 24px;
+        }
+        .content {
+            width: 100%;
+            .img-article-p-2 {
+                width: 100%;
+                height: 200px;
+                background: url(../img/article_photo.svg) no-repeat;
+                background-size: cover;
+            }
+        }  
+    } 
+}
+@media (min-width: 981px) {
+    .article-content {
+        .article-p {
+            display: flex;
+            flex-direction: row;
+            h2 {
+                width: 30%;
+                margin-right: 50px;
+                font-size: 32px;
+            }
+            .content {
+                width: 70%;
+                .img {
+                    width: 100%;
+                    height: 498px;
+                }
+            }  
+        } 
+    }
+}
